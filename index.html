@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Geolocation</title>
+    <title>Meetup based on your location</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
     <meta charset="utf-8">
     <style>
@@ -42,7 +42,7 @@ function initialize() {
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'You are here'
+        content: 'You'
       });
 
       map.setCenter(pos);
