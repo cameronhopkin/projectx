@@ -5,8 +5,6 @@
       <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
     <style>
       html, body, #map-canvas {
         width: 800px;
@@ -19,17 +17,19 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
     <meta charset="utf-8">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-        <script>
+     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>   
 // Note: This example requires that you consent to location sharing when
 // prompted by your browser. If you see a blank space instead of the map, this
 // is probably because you have denied permission for location sharing.
 
-var map;
+<script>
+  var map;
 
-function initialize() {
-  var mapOptions = {
-    zoom: 10
+    function initialize() {
+      var mapOptions = {
+      zoom: 10
   };
+  
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
